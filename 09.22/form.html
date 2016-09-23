@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>城市选择</title>
+</head>
+<body>
+<form action="index.html" onsubmit="doSubmit(event)">
+ <ul>
+  <li>
+   省份:
+   <select name="shengfen" id="shengfen" onchange="selChange()">
+     <option value="0">请选择</option>
+   </select>
+   市:
+   <select  name="shi" id="shi" onchange="selQuChange()">
+     <option value="0">请选择</option>
+   </select>
+    区:
+    <select name="qu" id="qu">
+      <option value="0">请选择</option>
+    </select>
+  </li>
+ </ul>
+
+</form>
+
+
+  <script src="js/form.js"></script>
+</body>
+</html>
